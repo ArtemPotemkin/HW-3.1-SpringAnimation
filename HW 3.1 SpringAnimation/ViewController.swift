@@ -12,22 +12,18 @@ class ViewController: UIViewController {
 
 
     @IBOutlet var springAnimationView: SpringView!
+    @IBOutlet var startAnimationButton: SpringButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        springAnimationView.layer.cornerRadius = 15
+        
+        springAnimationView.layer.cornerRadius = 10
+        startAnimationButton.layer.cornerRadius = 10
     }
 
 
     @IBAction func startSpringAnimation(_ sender: SpringButton) {
-        springAnimationView.animation = "shake"
-        springAnimationView.curve = "easeOut"
-        springAnimationView.force = 2
-        springAnimationView.animate()
-        
-        sender.animation = "fadeInLeft"
-    
-        sender.animate()
+      
     }
 }
 

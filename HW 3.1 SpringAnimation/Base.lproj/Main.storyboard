@@ -17,28 +17,59 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Z4m-O1-Aup" customClass="SpringView" customModule="SpringAnimation">
-                                <rect key="frame" x="75" y="109" width="261" height="128"/>
+                                <rect key="frame" x="75" y="109" width="261" height="200"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Spring Animation View" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JKP-dg-5hH">
-                                        <rect key="frame" x="23.333333333333329" y="51.000000000000007" width="214.33333333333337" height="26.333333333333336"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="23" translatesAutoresizingMaskIntoConstraints="NO" id="1BC-CF-PJe">
+                                        <rect key="frame" x="16" y="16" width="229" height="168"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="preset: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wjW-Vn-jem">
+                                                <rect key="frame" x="0.0" y="0.0" width="229" height="15.333333333333334"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="curve: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7zm-hq-BUR">
+                                                <rect key="frame" x="0.0" y="38.333333333333343" width="229" height="15"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="force: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yTH-1J-Ijt">
+                                                <rect key="frame" x="0.0" y="76.333333333333343" width="229" height="15.333333333333329"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="duration: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jjn-yA-iAt">
+                                                <rect key="frame" x="0.0" y="114.66666666666666" width="229" height="15"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="delay: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Trm-mc-smq">
+                                                <rect key="frame" x="0.0" y="152.66666666666669" width="229" height="15.333333333333343"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
                                 </subviews>
-                                <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="128" id="XEs-3t-j3G"/>
-                                    <constraint firstItem="JKP-dg-5hH" firstAttribute="centerY" secondItem="Z4m-O1-Aup" secondAttribute="centerY" id="b5W-dM-v5M"/>
-                                    <constraint firstItem="JKP-dg-5hH" firstAttribute="centerX" secondItem="Z4m-O1-Aup" secondAttribute="centerX" id="ozr-C6-cvD"/>
+                                    <constraint firstAttribute="trailing" secondItem="1BC-CF-PJe" secondAttribute="trailing" constant="16" id="9zR-Fa-frx"/>
+                                    <constraint firstItem="1BC-CF-PJe" firstAttribute="leading" secondItem="Z4m-O1-Aup" secondAttribute="leading" constant="16" id="AGB-xa-arU"/>
+                                    <constraint firstAttribute="bottom" secondItem="1BC-CF-PJe" secondAttribute="bottom" constant="16" id="MWR-5t-vJu"/>
+                                    <constraint firstAttribute="height" constant="200" id="XEs-3t-j3G"/>
+                                    <constraint firstItem="1BC-CF-PJe" firstAttribute="top" secondItem="Z4m-O1-Aup" secondAttribute="top" constant="16" id="XkY-oy-fgi"/>
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UBX-Nf-Fpb" customClass="SpringButton" customModule="SpringAnimation">
                                 <rect key="frame" x="66" y="599.33333333333337" width="261" height="30"/>
-                                <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                <state key="normal" title="Start Spring Animation"/>
+                                <state key="normal" title="Run"/>
                                 <connections>
                                     <action selector="startSpringAnimation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gAl-8O-HCd"/>
                                 </connections>
@@ -57,6 +88,7 @@
                     </view>
                     <connections>
                         <outlet property="springAnimationView" destination="Z4m-O1-Aup" id="xq7-mM-Pto"/>
+                        <outlet property="startAnimationButton" destination="UBX-Nf-Fpb" id="txz-Qf-pKM"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -68,8 +100,8 @@
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
-        <systemColor name="systemYellowColor">
-            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
