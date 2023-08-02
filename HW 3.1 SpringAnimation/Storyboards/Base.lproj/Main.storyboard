@@ -87,6 +87,11 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="curveLabel" destination="7zm-hq-BUR" id="f2s-hU-K78"/>
+                        <outlet property="delayLabel" destination="Trm-mc-smq" id="jML-2D-9ru"/>
+                        <outlet property="durationLabel" destination="jjn-yA-iAt" id="C4y-Vs-Ize"/>
+                        <outlet property="forceLabel" destination="yTH-1J-Ijt" id="pqV-0n-dxV"/>
+                        <outlet property="presetLabel" destination="wjW-Vn-jem" id="8Pe-NO-Pda"/>
                         <outlet property="springAnimationView" destination="Z4m-O1-Aup" id="xq7-mM-Pto"/>
                         <outlet property="startAnimationButton" destination="UBX-Nf-Fpb" id="txz-Qf-pKM"/>
                     </connections>

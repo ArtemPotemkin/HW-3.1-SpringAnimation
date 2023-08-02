@@ -19,8 +19,8 @@ struct Animation {
             preset: DataStore.shared.presets.randomElement() ?? "pop",
             curve: DataStore.shared.curves.randomElement() ?? "easeIn",
             force: Double.random(in: 1.0...2.3),
-            duration: Double.random(in: 0.5...3.0),
-            delay: Double.random(in: 0.0...2.0)
+            duration: Double.random(in: 0.5...2.0),
+            delay: Double.random(in: 0.0...0.8)
         )
         return animation
     }
