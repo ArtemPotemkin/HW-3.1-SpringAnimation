@@ -9,7 +9,8 @@ import UIKit
 import SpringAnimation
 
 final class ViewController: UIViewController {
-    
+   
+    // MARK: - IBOutlets
     @IBOutlet var presetLabel: UILabel!
     @IBOutlet var curveLabel: UILabel!
     @IBOutlet var forceLabel: UILabel!
@@ -17,10 +18,13 @@ final class ViewController: UIViewController {
     @IBOutlet var delayLabel: UILabel!
     
     @IBOutlet var springAnimationView: SpringView!
+    
     @IBOutlet var startAnimationButton: SpringButton!
     
-    var currentAnimation = Animation.getAnimation()
+    // MARK: - Private properties
+    private var currentAnimation = Animation.getAnimation()
     
+    // MARK: - View Life Cycles
     override func viewDidLoad() {
         super.viewDidLoad()
         setupLabels()
@@ -29,6 +33,7 @@ final class ViewController: UIViewController {
         startAnimationButton.layer.cornerRadius = 10
     }
     
+    // MARK: - "IBActions"
     @IBAction func startSpringAnimation(_ sender: SpringButton) {
         
         springAnimationView.animation = currentAnimation.preset
@@ -45,6 +50,7 @@ final class ViewController: UIViewController {
         startAnimationButton.setTitle("Run \(nextAnimation.preset)", for: .normal)
     }
     
+    // MARK: - Private Methods
     private func setupLabels() {
         presetLabel.text = "preset: \(currentAnimation.preset)"
         curveLabel.text = "curve: \(currentAnimation.curve)"
